@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="left-side">
+        <div class="sidebar-container">
+            <div class="sidebar">
+                <logo><img src="icons/fox.png" class="logo"><h1>Night Fox</h1></logo>
+        <ul class="nav1">
+            <li><img src="icons/home.png" class="icon">Home</li>
+            <li><img src="icons/profile.png" class="icon">Profile</li>
+            <li><img src="icons/messages.png" class="icon">Messages</li>
+            <li><img src="icons/history.png" class="icon">History</li>
+            <li><img src="icons/tasks.png" class="icon">Tasks</li>
+        </ul>
+        </div><a href="https://www.flaticon.com/de/autoren/freepik" class="logolink">Logo by Freepik</a>
+        </div>
+        <div class="grid-container">
+        <div class="search-container">
+          <h1>Welcome back, Beans</h1>
+          <div class="search-side">
+            <img class="magnif-glass" src="icons/magnifiying-glass.png">
+            <input type="text" placeholder="Search">
+            <img class="pfp" src="images/pfp.jpeg">
+          </div>
+        </div>
+        <div class="grid">
+            <div class="box1 box">
+                <div class="textbox">
+                    <h4>This Weeks Activity</h4>
+                    <p>See how productive you've been in the past week</p>
+                </div>
+                <div class="canvas">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+            <div class="box2 box">
+              <div class="textbox">
+                <h4>Start a new project</h4>
+                <p>Create a new project for your profile! Make it look fresh.</p>
+            </div>
+                <form>
+                  <ul>
+                    <li class="li-one">
+                      <label for="project-name">Project name</label>
+                      <input type="text" id="project-name">
+                    </li>
+                    <div class="btn-checks">
+                        <div class="checks">
+                            <li class="li-two">
+                              <input type="radio" id="checkbox1" name="radio">
+                              <label for="checkbox1">Private</label>
+                            </li>
+                            <li class="li-three">
+                              <input type="radio" id="checkbox2" name="radio">
+                              <label for="checkbox2">Public</label>
+                            </li>
+                        </div>
+                        <button type="submit" class="submit-button">Create Project</button>
+                    </div>
+                  </ul>
+                </form>
+            </div>
+            <div class="box3 box">
+              <div class="textbox">
+                <h4>Latest Changes</h4>
+                <p>See the latest added features of Night Fox</p>
+              </div>
+              <div class="changes-container">
+                <hr>
+                <div class="all-changes">
+                <div class="change1 changes">
+                  <h5>File-organisation optimised</h5>
+                  <p>16 hours ago</p>
+                </div>
+                <div class="changes">
+                  <h5>Project picture option added</h5>
+                  <p>4 days ago</p>
+                </div>
+                <div class="changes">
+                  <h5>Security options added</h5>
+                  <p>5 days ago</p>
+                </div>
+                <div class="changes">
+                  <h5>Storage limitation increased</h5>
+                  <p>7days ago</p>
+                </div>
+                <div class="changes">
+                  <h5>Repo amount limitation increased</h5>
+                  <p>7-6-2024</p>
+                </div>
+                <div class="changes">
+                  <h5>Night Fox Pro additional emojis added</h5>
+                  <p>28-5-2024</p>
+                </div>
+                <div class="changes">
+                  <h5>I'm out of ideas added</h5>
+                  <p>26-5-2024</p>
+                </div>
+                <div class="change2 changes">
+                  <h5>Bla bla bla added</h5>
+                  <p>22-5-2024</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="box4 box">
+              <div class="textbox">
+                <h4>Favourite</h4>
+                <p>You've marked this project as your favourite.</p>
+              </div>
+              <a href="https://emmahare.github.io/Resident-Evil/" class="fav-project">
+                <img class="proj-img" src="images/fav-prj.png">
+                <div class="sec-text">
+                <h3>Resident-Evil</h3>
+                <p>A Resident Evil themed landing page made with HTML and CSS, with its
+                layout concentrated on Flexbox.</p>
+              </div>
+              </a>
+         </div>
+            <div class="box5 box">
+              <div class="textbox">
+                <h4>Night Fox Pro</h4>
+                <p>Get it now for the latest and safest features</p>
+              </div>
+              <div class="pro-container">
+                <ul>
+                  <li>5gb commit storage</li>
+                  <li>Unlimited project members</li>
+                  <li>Private Repository enablement</li>
+                </ul>
+                <button>Find our more</button>
+              </div>
+            </div>
+            <div class="box6 box">
+              <div class="textbox textbox6">
+                <h4>Trending</h4>
+                <p>These repos have been trending lately</p>
+              </div>
+              <div class="pop-project-container">
+              <div class="pop-project1 pop-project">
+                <img class="proj-img" src="images/tree.jpeg">
+                <div class="sec-text">
+                  <h3>UGH-bot</h3>
+                  <p>A bot that will write all of your code for you and make it 
+                  look like you wrote it yourself.</p>
+                </div>
+              </div>
+              <div class="pop-project">
+                <img class="proj-img" src="images/panda.jpeg">
+                <div class="sec-text">
+                  <h3>Emoji-CC</h3>
+                  <p>A plugin that will convert your code into emojis.</p>
+                </div>
+              </div>
+              <div class="pop-project">
+                <img class="proj-img" src="images/manga.jpeg">
+                <div class="sec-text">
+                  <h3>4k-upscaler</h3>
+                  <p>Set of high-quality upscaling/denoising algorithms that can 
+                  be implemented in any programmin language</p>
+                </div>
+              </div>
+              <div class="pop-project4 pop-project">
+                <img class="proj-img" src="images/tree2.jpeg">
+                <div class="sec-text">
+                  <h3>Nature-cc</h3>
+                  <p>Will turn your code into messages which will remind/force 
+                  you to get up and go outside.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+  </aside>
+    <aside class="right-side">
+          <div class="top-bar">
+            <div class="top-bar-sep">
+              <img src="icons/friends.png">
+              <h3>Friends</h3>
+            </div>
+            <a href="/">View all</a>
+          </div>
+          <div class="friends-container">
+            <div class="friend-profile">
+              <img src="images/dino.jpg">
+              <div class="textbox-right">
+                <h4>robertWinston</h4>
+                <p>Full-stack web-dev</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/animeguy.jpg">
+              <div class="textbox-right">
+                <h4>theRealCody</h4>
+                <p>master gamer</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/woman.jpg">
+              <div class="textbox-right">
+                <h4>veronicalevine</h4>
+                <p>Front-end web-dev</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/hacker.jpg">
+              <div class="textbox-right">
+                <h4>anon_max</h4>
+                <p>UI designer</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/baghead.jpg">
+              <div class="textbox-right">
+                <h4>lucyCodes</h4>
+                <p>Coffee lover</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/anonym-girly.jpg">
+              <div class="textbox-right">
+                <h4>saraxoxo</h4>
+                <p>full-stack dev in process</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/dog.jpg">
+              <div class="textbox-right">
+                <h4>dave_bowey</h4>
+                <p>Back-end engineer</p>
+              </div>
+            </div>
+            <div class="friend-profile">
+              <img src="images/man2.jpg">
+              <div class="textbox-right">
+                <h4>michaeltownley</h4>
+                <p>unemployed</p>
+              </div>
+            </div>
+          </div>
+          <hr class="right-line">
+          <div class="suggested-container">
+            <div class="suggest-proj">
+                
+            </div>
+            <div class="suggest-proj">
+
+            </div>
+            <div class="suggest-proj">
+
+            </div>
+            <div class="suggest-proj">
+
+            </div>
+            <div class="suggest-proj">
+
+            </div>
+            <div class="suggest-proj">
+
+            </div>
+          </div>
+  </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
